@@ -1,0 +1,11 @@
+rules:
+  - id: missing-authorization
+    pattern: |
+      def $FUNC(...):
+        ...
+    message: "Function may be missing authorization checks."
+    severity: WARNING
+    languages: [python]
+    metadata:
+      remediation: "Add authorization checks."
+  

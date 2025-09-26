@@ -1,0 +1,10 @@
+rules:
+  - id: outdated-dependency
+    pattern: |
+      "express": "4.16.0"
+    message: "Outdated dependency detected. Update to latest version."
+    severity: WARNING
+    languages: [javascript]
+    metadata:
+      remediation: "Update dependency version."
+  
